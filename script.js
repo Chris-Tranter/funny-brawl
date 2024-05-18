@@ -16,49 +16,43 @@ let char1 = {
       },
     ],
     attack() {
-      let damage = Math.ceil(Math.random() * 15);
+      let damage = Math.ceil(Math.random() * 20);
       let attack = Math.floor(Math.random() * 3);
-      console.log(`${this.name} used ${this.attacks[attack].name}, ${this.attacks[attack].dialogue} which deals ${damage} damage.\n`,);
+      console.log(`${this.name} used ${this.attacks[attack].name}, ${this.attacks[attack].dialogue} which deals ${damage} damage.\n`,);    // the \n in javascript means new line!
       return damage;
     },
     //if char 1 dies to .... then this message is displayed
     die() {
-      console.log(
-        `The Shadow shaman falls back, slams onto the floor and vanishes.`,
-      );
+      console.log(`The Shadow shaman falls back, slams onto the floor and vanishes!`,);
     },
   };
   
   let char2 = {
-    name: "",
+    name: "Armoured goblin",
     health: 100,
     attacks: [
       {
-        name: "",
-        dialogue: "HULK SMAAAAAAASH!!!!",
+        name: "Dual punches",
+        dialogue: "The opponent was smacked twice!",
       },
       {
-        name: "Kerb Stomp",
-        dialogue: "HULK STOOOOOOMP!!!!",
+        name: "War cry",
+        dialogue: "The opponent was startled!",
       },
       {
-        name: "Gamma Burst",
-        dialogue: "HULK BUUUUUUURRRRRST!!!!",
+        name: "Armour impale",
+        dialogue: "The opponents armour was pierced!",
       },
     ],
     attack() {
-      let damage = Math.ceil(Math.random() * 10);
+      let damage = Math.ceil(Math.random() * 20);
       let attack = Math.floor(Math.random() * 3);
-      console.log(
-        `"${this.attacks[attack].dialogue}," shouted Hulk, as he used his ${this.attacks[attack].name} attack and dealt ${damage} damage.\n`,    // the \n in javascript means new line!
-      );
+      console.log(`${this.name} used ${this.attacks[attack].name}, ${this.attacks[attack].dialogue} which deals ${damage} damage.\n`,);    // the \n in javascript means new line!
       return damage;
     },
     //if char 2 dies to .... then this message is displayed
     die() {
-      console.log(
-        `Oliver took his stale baguette and impaled the mighty figure of Hulk with it. He smiled with delight as the creatures blood soaked the baguette - "yum - that will help with my iron deficiency."`,
-      );
+      console.log(`The Armoured goblin wretches in pain, drops to its knees and crashes into the ground!`,);
     },
   };
   
